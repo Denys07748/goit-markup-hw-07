@@ -17,10 +17,10 @@
         margin-left: 93px;
         color: var(--title-text-color);
     }
-}
 
-.header__item:not(:last-child) {
-    margin-right: 50px;
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
 }
 
 .header__link {

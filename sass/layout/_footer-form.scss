@@ -2,26 +2,25 @@
     margin-left: auto;
 }
 
-.footer__input::placeholder,
-.footer__input {
-    font-size: 16px;
-    line-height: 1.25;
-    color: var(--address-color);
-}
-
 .footer__input {
     min-width: 358px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
     background-color: inherit;
     color: var(--primery-bg-color);
     transition: border var(--transit-time) var(--timing-function);
-}
 
-.footer__input:focus,
-.footer__input:hover {
-    border: 1px solid var(--accent-color);
+    &::placeholder {
+    color: var(--address-color);
+    }
+
+    &:focus,
+    &:hover {
+        border: 1px solid var(--accent-color);
+    }
 }
 
 .footer__button {

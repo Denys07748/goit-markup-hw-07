@@ -26,16 +26,11 @@
     border: 1px solid var(--form-border-color);
     border-radius: 4px;
     transition: border var(--transit-time) var(--timing-function);
-}
 
-.form__input:focus,
-.form__input:hover {
-    border: 1px solid var(--accent-color);
-}
-
-.form__input:focus + .form__icon,
-.form__input:hover + .form__icon {
-    color: var(--accent-color);
+    &:focus,
+    &:hover {
+        border: 1px solid var(--accent-color);
+    }
 }
 
 .form__icon {
@@ -46,17 +41,15 @@
     color: var(--title-text-color);
     fill: currentColor;
     transition: color var(--transit-time) var(--timing-function);
+
+    .form__input:focus + &,
+    .form__input:hover + & {
+        color: var(--accent-color);
+    }
 }
 
 .form__field--bigger {
     margin-bottom: 20px;
-}
-
-.form__comment::placeholder {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    color: var(--textarea-color);
 }
 
 .form__comment {
@@ -65,11 +58,18 @@
     border: 1px solid var(--form-border-color);
     border-radius: 4px;
     transition: border var(--transit-time) var(--timing-function);
-}
 
-.form__comment:focus,
-.form__comment:hover {
-    border: 1px solid var(--accent-color); 
+    &::placeholder {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+        color: var(--textarea-color);
+    }
+
+    &:focus,
+    &:hover {
+        border: 1px solid var(--accent-color); 
+    }
 }
 
 .policy {
@@ -98,19 +98,19 @@
     border-radius: 2px;
     margin-right: 7px;
     transition: border var(--transit-time) var(--timing-function);
-}
 
-.policy__checkbox:checked + .policy__icon {
-    background-image: url(../images/icon-check.svg);
-    background-size: contain;
-    background-color: #fff;
-    background-origin: border-box;
-    border: 2px solid var(--accent-color);
-}
-
-.policy__checkbox:focus + .policy__icon,
-.policy__checkbox:hover + .policy__icon {
-    border: 2px solid var(--accent-color);
+    .policy__checkbox:checked + & {
+        background-image: url(../images/icon-check.svg);
+        background-size: contain;
+        background-color: #fff;
+        background-origin: border-box;
+        border: 2px solid var(--accent-color);
+    }
+    
+    .policy__checkbox:focus + &,
+    .policy__checkbox:hover + & {
+        border: 2px solid var(--accent-color);
+    }
 }
 
 .policy__link {

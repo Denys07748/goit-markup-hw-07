@@ -24,13 +24,14 @@
 .address__link {
     color: var(--address-color);
     transition: color var(--transit-time) var(--timing-function);
-}
-.address__link--white {
-    color: var(--primery-bg-color);
-}
-.address__link:hover, 
-.address__link:focus {
-    color: var(--accent-color);
+
+    &--white {
+        color: var(--primery-bg-color);
+    }
+    &:hover, 
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .footer__title {
