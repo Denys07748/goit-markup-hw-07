@@ -1,14 +1,16 @@
 @import "./utils/vars";
 @import "./base/reset";
 @import "./base/common";
+@import "./base/card-set";
+@import "./base/section";
 @import "./utils/hidden";
 
 //COMPONENTS
 
 @import "./components/container";
-@import "./components/title";
 @import "./components/button";
 @import "./components/logo";
+@import "./components/social";
 @import "./components/modal";
 @import "./components/modal-form";
 
@@ -20,7 +22,6 @@
 @import "./layout/features";
 @import "./layout/functions";
 @import "./layout/team";
-@import "./layout/social";
 @import "./layout/clients";
 @import "./layout/footer";
 @import "./layout/footer-form";
