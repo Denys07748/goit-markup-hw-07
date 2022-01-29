@@ -15,9 +15,8 @@
 
 .address {
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
 }
+
 .address__item:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -35,7 +34,6 @@
 }
 
 .footer__title {
-    font-weight: 700;
     color: var(--primery-bg-color);
     margin-bottom: 20px;
 }
